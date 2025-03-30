@@ -12,17 +12,17 @@ import (
 	"net/http"
 	"path"
 
-	"github.com/edgexfoundry/go-mod-core-contracts/v4/dtos/requests"
-	"github.com/edgexfoundry/go-mod-core-contracts/v4/models"
+	"github.com/agile-edge/go-mod-core-contracts/v4/dtos/requests"
+	"github.com/agile-edge/go-mod-core-contracts/v4/models"
 	"github.com/spf13/cast"
 
-	httpClient "github.com/edgexfoundry/go-mod-core-contracts/v4/clients/http"
-	"github.com/edgexfoundry/go-mod-core-contracts/v4/clients/interfaces"
-	"github.com/edgexfoundry/go-mod-core-contracts/v4/common"
-	"github.com/edgexfoundry/go-mod-messaging/v4/messaging"
-	msgTypes "github.com/edgexfoundry/go-mod-messaging/v4/pkg/types"
+	httpClient "github.com/agile-edge/go-mod-core-contracts/v4/clients/http"
+	"github.com/agile-edge/go-mod-core-contracts/v4/clients/interfaces"
+	"github.com/agile-edge/go-mod-core-contracts/v4/common"
+	"github.com/agile-edge/go-mod-messaging/v4/messaging"
+	msgTypes "github.com/agile-edge/go-mod-messaging/v4/pkg/types"
 
-	"github.com/edgexfoundry/go-mod-configuration/v4/pkg/types"
+	"github.com/agile-edge/go-mod-configuration/v4/pkg/types"
 )
 
 const (
@@ -198,7 +198,7 @@ func (k *keeperClient) WatchForChanges(updateChannel chan<- interface{}, errorCh
 
 		// send a nil value to updateChannel once the watcher connection is established
 		// for go-mod-bootstrap to ignore the first change event
-		// refer to the isFirstUpdate variable declared in https://github.com/edgexfoundry/go-mod-bootstrap/blob/main/bootstrap/config/config.go
+		// refer to the isFirstUpdate variable declared in https://github.com/agile-edge/go-mod-bootstrap/blob/main/bootstrap/config/config.go
 		updateChannel <- nil
 
 	outerLoop:

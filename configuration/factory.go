@@ -20,8 +20,8 @@ package configuration
 import (
 	"fmt"
 
-	"github.com/edgexfoundry/go-mod-configuration/v4/internal/pkg/keeper"
-	"github.com/edgexfoundry/go-mod-configuration/v4/pkg/types"
+	"github.com/agile-edge/go-mod-configuration/v4/internal/pkg/keeper"
+	"github.com/agile-edge/go-mod-configuration/v4/pkg/types"
 )
 
 func NewConfigurationClient(config types.ServiceConfig) (Client, error) {

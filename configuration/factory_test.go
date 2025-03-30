@@ -21,7 +21,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/edgexfoundry/go-mod-configuration/v4/pkg/types"
+	"github.com/agile-edge/go-mod-configuration/v4/pkg/types"
 )
 
 var config = types.ServiceConfig{

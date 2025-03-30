@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/edgexfoundry/go-mod-core-contracts/v4/clients/interfaces"
+	"github.com/agile-edge/go-mod-core-contracts/v4/clients/interfaces"
 )
 
 const DefaultProtocol = "http"
